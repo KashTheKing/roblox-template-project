@@ -1,0 +1,6 @@
+std = "luau+roblox"
+exclude = ["src/shared/configs/packet-config.luau"]
+
+[rules]
+unused_variable = "warn"
+mixed_table = "allow"

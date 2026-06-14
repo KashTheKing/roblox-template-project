@@ -1,0 +1,9 @@
+[package]
+name = "jaeymo/your-project-name-here"
+private = true
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+binder = "kashtheking/binder@0.4.0"

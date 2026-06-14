@@ -1,0 +1,62 @@
+{
+    "name": "your-project-name",
+
+    "tree": {
+        "$className": "DataModel",
+
+        "Workspace": {
+            "$ignoreUnknownInstances": true,
+            "$className": "Workspace"
+        },
+
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "$ignoreUnknownInstances": true,
+
+            "shared": {
+                "$path": "src/shared"
+            },
+
+            "client": {
+                "$path": "src/client"
+            },
+
+            "packages": {
+                "$path": "Packages"
+            },
+
+            "assets": {
+                "$className": "Folder",
+
+                "sounds": {
+                    "$className": "Folder"
+                },
+
+                "models": {
+                    "$className": "Folder"
+                }
+            }
+        },
+
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "$path": "src/server",
+
+            "server-bootstrap": {
+                "$path": "src/bootstrap/server-bootstrap.server.luau"
+            }
+        },
+
+        "StarterPlayer": {
+            "$className": "StarterPlayer",
+
+            "StarterPlayerScripts": {
+                "$className": "StarterPlayerScripts",
+
+                "client-bootstrap": {
+                    "$path": "src/bootstrap/client-bootstrap.client.luau"
+                }
+            }
+        }
+    }
+}
