@@ -1,5 +1,5 @@
 {
-    "name": "your-project-name",
+    "name": "osm-world",
 
     "tree": {
         "$className": "DataModel",
@@ -23,6 +23,18 @@
 
             "packages": {
                 "$path": "Packages"
+            },
+
+            "remotes": {
+                "$className": "Folder",
+
+                "get-tile": {
+                    "$className": "RemoteFunction"
+                },
+
+                "resolve-location": {
+                    "$className": "RemoteFunction"
+                }
             },
 
             "assets": {
